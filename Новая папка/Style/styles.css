@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+body {
+  font-family: "Suwannaphum", serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Suwannaphum:wght@100;300;900&display=swap");
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 108px;
+  background-color: rgba(69, 64, 91, 1);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: white;
+  width: 95%;
+  margin: 0 auto;
+}
+.header-container .header-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.header-container .header-menu a:hover {
+  color: #9565cf;
+}
+.header-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-button {
+  border: none;
+  padding: 8px 55px;
+  font-size: 20px;
+  background-color: rgba(127, 119, 163, 1);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #7851a9;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.welcome h1,
+.welcome h2,
+.welcome .rod1 img,
+.welcome .rod1 p {
+  z-index: 1;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url(../Images/bcwelcome.png);
+}
+.welcome h2 {
+  color: rgba(204, 204, 204, 1);
+  font-size: 36px;
+}
+.welcome h1 {
+  font-size: 48px;
+}
+
+.rod1 {
+  display: flex;
+  position: absolute;
+  bottom: 24.5px;
+  left: 34px;
+  align-items: center;
+}
+.rod1 p {
+  font-size: 32px;
+  margin-left: 26px;
+}
+
+.works {
+  width: 100%;
+
+  background-size: cover;
+  position: relative;
+  background-image: url(../Images/bcwork.png);
+  padding-top: 146px;
+  padding-bottom: 70px;
+}
+@media (max-width: 600px) {
+  .welcome h2 {
+    font-size: 20px;
+  }
+  .rod1 p {
+    font-size: 22px;
+  }
+  .welcome h1 {
+    font-size: 38px;
+  }
+  .q3 img {
+    width: 230px;
+    height: 160px;
+  }
+  .q2 img {
+    width: 170px;
+    height: 160px;
+  }
+  .q5 img {
+    width: 150px;
+    height: 150px;
+  }
+  .q4 img {
+    width: 190px;
+    height: 140px;
+  }
+  .q1 img {
+    width: 140px;
+    height: 200px;
+  }
+}
+
+.all,
+.first,
+.second {
+  z-index: 2;
+}
+.all {
+  display: flex;
+  height: calc(100% - 216px);
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  align-items: flex-end;
+}
+
+.k {
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+.k:hover {
+  transform: scale(1.05);
+}
+.about {
+  background-image: url(../Images/me\ bc.png);
+  padding: 135px 115px;
+}
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text h2 {
+  font-size: 50px;
+}
+.about-text p {
+  font-size: 45px;
+}
+.about-text {
+  width: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .about-text p {
+    font-size: 25px;
+  }
+  .about img {
+    width: 230px;
+    height: 300px;
+    margin-right: 20px;
+  }
+  .about-text {
+    width: 60%;
+  }
+  .about-text h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .contact .name {
+    font-size: 30px;
+  }
+  .contact .images {
+    width: 50px;
+    height: 50px;
+  }
+  .contact .container_contact form label {
+    font-size: 20px;
+  }
+  .contact .container_contact button {
+    height: 60px;
+    bottom: 5px;
+    right: 5px;
+    width: 60px;
+    font-size: 20px;
+  }
+  .contact .container_contact form {
+    width: 600px;
+
+    height: 350px;
+  }
+}
+.contact {
+  width: 100%;
+
+  background-size: cover;
+  position: relative;
+  background-image: url(../Images/bcContact.png);
+  padding-top: 146px;
+  padding-bottom: 70px;
+}
+.container_contact {
+  display: flex;
+  max-width: 1288px;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+}
+.name {
+  display: flex;
+  font-size: 70px;
+  color: white;
+  width: 1000px;
+  align-items: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 790px;
+  color: white;
+  box-shadow: 0 0 20px 15px white;
+  padding: 20px 10px;
+  background-color: rgba(216, 149, 163, 1);
+  border-radius: 10px;
+  height: 500px;
+}
+.name img {
+  height: 100px;
+  width: 100px;
+}
+.contact form label {
+  font-size: 50px;
+}
+.contact form input {
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+.happy {
+  display: flex;
+  flex-direction: column;
+}
+.happy img {
+  height: 100px;
+  width: 100px;
+}
+.container_contact button {
+  height: 80px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 200px;
+  border: none;
+  color: white;
+  background-color: rgba(240, 189, 200, 1);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 35px;
+  transition: transform 0.5s ease-out;
+}
+
+.container_contact button:hover {
+  transform: scale(1.05);
+}
+.h img:hover {
+  transform: scale(1.05);
+  filter: saturate(0);
+}
+.h {
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+  filter: saturate(100%);
+}
+
+footer {
+  background-color: rgba(51, 48, 65, 1);
+  height: 283px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h2 {
+  font-size: 40px;
+}
+footer p {
+  font-size: 20px;
+}
+.icon {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon img {
+  width: 62px;
+  height: 62px;
+}
+.p {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  footer h2 {
+    font-size: 30px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .icon img {
+    width: 42px;
+    height: 42px;
+  }
+  .icon {
+    width: 200px;
+  }
+  footer {
+    height: 185px;
+  }
+  .header-menu {
+    width: 50%;
+  }
+  .header-container .header-menu a {
+    font-size: 20px;
+  }
+  .header-button {
+    padding: 4px 22px;
+  }
+}

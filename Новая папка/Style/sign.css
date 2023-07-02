@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Suwannaphum", serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Suwannaphum:wght@100;300;900&display=swap");
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 108px;
+  background-color: rgba(69, 64, 91, 1);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: white;
+  width: 95%;
+  margin: 0 auto;
+}
+.header-container .header-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.header-container .header-menu a:hover {
+  color: #9565cf;
+}
+.header-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-button {
+  border: none;
+  padding: 8px 55px;
+  font-size: 20px;
+  background-color: rgba(127, 119, 163, 1);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #7851a9;
+}
+
+footer {
+  background-color: rgba(51, 48, 65, 1);
+  height: 283px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h2 {
+  font-size: 40px;
+}
+footer p {
+  font-size: 20px;
+}
+.icon {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon img {
+  width: 62px;
+  height: 62px;
+}
+.p {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.h2_img h2 {
+  margin-bottom: 61px;
+  font-size: 48px;
+}
+
+/* Страница */
+
+.in {
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(221, 166, 195, 1);
+  font-size: 35px;
+  height: 80px;
+  width: 419px;
+  color: rgba(61, 61, 61, 1);
+}
+.up {
+  width: 140px;
+  height: 55px;
+  color: rgba(88, 88, 88, 1);
+  font-size: 25px;
+  border: none;
+  position: absolute;
+  bottom: 199px;
+  right: 208px;
+
+  right: 770px;
+  background: #cacaca;
+  border-radius: 10px;
+}
+.w {
+  font-size: 40px;
+  margin-top: 46px;
+}
+main form input {
+  width: 281px;
+  height: 60px;
+
+  background: rgba(221, 166, 195, 1);
+  border-radius: 10px;
+  border: none;
+}
+label {
+  font-size: 35px;
+  margin-bottom: 51px;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+
+  width: 449px;
+  height: 320px;
+
+  background: #ffffff;
+  border-radius: 33px;
+  padding: 53px 5px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  position: relative;
+  background-color: rgba(237, 199, 220, 1);
+  padding-top: 146px;
+  padding-bottom: 70px;
+}
+.white {
+  background-color: white;
+  height: 645px;
+  width: 552px;
+  border-radius: 0 33px 33px 0;
+  margin-bottom: 100px;
+}
+main img {
+  margin-bottom: 100px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+main button {
+  transition: transform 0.5s ease-out;
+}
+main button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .in {
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+  }
+  .up {
+    width: 90px;
+    height: 40px;
+
+    font-size: 15px;
+
+    bottom: 50px;
+    right: 50px;
+
+    right: 50px;
+  }
+  .w {
+    font-size: 30px;
+    margin-top: 46px;
+  }
+  main form input {
+    width: 90px;
+    height: 40px;
+  }
+  label {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  main form {
+    height: 170px;
+    width: 200px;
+
+    padding: 53px 5px;
+  }
+  main .white {
+    height: 345px;
+    width: 252px;
+
+    margin-bottom: 100px;
+  }
+  main .b {
+    height: 345px;
+    width: 252px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .icon img {
+    width: 42px;
+    height: 42px;
+  }
+  .icon {
+    width: 200px;
+  }
+  footer {
+    height: 185px;
+  }
+  .header-menu {
+    width: 50%;
+  }
+  .header-container .header-menu a {
+    font-size: 20px;
+  }
+  .header-button {
+    padding: 4px 22px;
+  }
+}
